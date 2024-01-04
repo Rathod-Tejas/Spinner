@@ -1,0 +1,90 @@
+<div id="game">
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=Changa+One);
+ #game {
+    font-family:'Changa One' serif;
+}
+#wheel {
+    top: 0;
+    left: 0;
+    width: 500px;
+    -moz-border-radius: 250px;
+    -webkit-border-radius: 250px;
+    border-radius: 250px;
+    -webkit-transition: -webkit-transform 0.5s linear;
+    -moz-transition: -moz-transform 0.5s linear;
+    -opera-transition: -opera-transform 0.5s linear;
+    -ms-transition: transform 0.5s linear;
+}
+#tick {
+    margin-left: 244px;
+    font-family: Arial;
+    font-size: 14pt;
+}
+#display {
+    background-color: #43759f;
+    padding: 1em 2em;
+    text-align: center;
+    border-radius: 40px;
+    border: 4px double #fff;
+}
+#display div.word {
+    display: inline-block;
+}
+#display div.wordLetter {
+    display: block;
+    width: 50px;
+    height: 65px;
+    margin: 2px;
+    border: 2px solid #43759f;
+    float: left;
+    line-height: 65px;
+    font-size: 40px;
+}
+#display div.wordLetter.letter {
+    border-color: #eee;
+}
+#playArea {
+    clear: both;
+}
+#playArea button {
+    text-transform: uppercase;
+    z-index: 1000;
+    border: 4px double #fff;
+    background-color: #43759f;
+    padding: 6px 14px;
+    color: white;
+    font-family: inherit;
+    font-size: 12pt;
+}
+#playArea #moneyArea {
+    float: right;
+    position: relative;
+    padding: 10px;
+    border: 2px black solid;
+    width: 200px;
+    margin: 5px;
+    font-size: 14pt;
+}
+#playArea #moneyArea #money {
+}
+.clear {
+    clear: both;
+}
+    </style>
+    
+    <div id="display"></div>
+    <div id="playArea">
+        <button id="spin">spin wheel</button>
+        <button id="vowel">buy vowel</button>
+        <button id="solve">solve puzzle</button>
+        <button id="newpuzzle">new puzzle</button>
+        <div id="moneyArea">Score: $<span id="money">0</span>
+
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="tick">⇩</div>
+    <img id="wheel" src="wheel-PhotoRoom.png" data-rotation="0" />
+    <script src="Main.js" > </script>
+</div>
